@@ -1,8 +1,10 @@
 package com.nanda.dynamicbaseurl.entity
 
+import com.google.gson.annotations.SerializedName
+
 data class DataModel(
-    val id: String,
-    val url: String,
-    val width: Int,
-    val height: Int
+    @SerializedName("id")
+    val id: String?,
+    @SerializedName("url")
+    val url: String?
 )
